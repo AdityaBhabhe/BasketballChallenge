@@ -3,7 +3,6 @@
     font-weight: 900;
     font-size: 3em;
     color:#FFEB39;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-bottom: 2px solid orange;
   }
   
@@ -26,9 +25,14 @@
 @media only screen and (max-width:600px){
   .ml10 {
     font-weight: 900;
-    font-size: 1em;
+    font-size: 1.4em;
     color:#FFEB39;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
+}
+
+@media only screen and (max-width:400px){
+  .ml10{
+    font-size: 1em;
+  }
 }

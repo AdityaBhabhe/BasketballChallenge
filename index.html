@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="./login.css">
   <link rel="stylesheet" type="text/css" href="./hamburger.css">
   <link rel="stylesheet" type="text/css" href="./team.css">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="nav-container" id="navbar">
@@ -36,7 +36,7 @@
       <a href="#video">Video</a>
       <a href="#faqs">FAQS</a>
       <a href="#contact">Contact Us</a>
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+      <button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
     </div>
     
     <button class="openbtn" onclick="openNav()">☰</button>  
@@ -140,8 +140,8 @@
     <div class="main-container">
       <div class="About-us" id="aboutus">
         <div class="About-us-wrapper">
-          <h1 style="font-family: sans-serif;color: rgb(104, 12, 129);"><u>About us</u></h1>
-          <img class="basket-image" src="artimg-1.png" alt="basket-ball" height="300px" width="300px">
+          <h2>About us</h2>
+          <img class="basket-image" src="artimg-1.png" alt="basket-ball"/>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius animi porro maxime perferendis?
             Velit expedita quos modi dicta molestias veniam maiores, eos, inventore ipsam nostrum repellat harum perferendis vitae ad.
@@ -191,7 +191,7 @@
     </div>
 
     <div class="players-images" id="team">
-      <div class="player-title">TEAM</div>
+      <h2 class="player-title">TEAM</h2>
       <div class="players-upper-row">
         <ul class="ch-grid">
           <li>
@@ -237,30 +237,31 @@
       </div>
     </div>
     <div class="video" id="video">
-      <p>Videos</p><iframe  src="https://www.youtube.com/embed/hqvGOPB0KmQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h2><span>Videos</span></h2><iframe  src="https://www.youtube.com/embed/hqvGOPB0KmQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
     <div class="faqs" id="faqs">
-      <h2>FAQs  </h2>
+      <h2>FAQs </h2>
+      <div class="faqs-section">
+        <button class="accordion">Question 1</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
 
-      <button class="accordion">Section 1</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
+        <button class="accordion">Question 2</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
 
-      <button class="accordion">Section 2</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button class="accordion">Section 3</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-      <button class="accordion">Section 4</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
+        <button class="accordion">Question 3</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="accordion">Question 4</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>  
       <script>
         var acc = document.getElementsByClassName("accordion");
         var panel = document.getElementsByClassName('panel');
@@ -287,6 +288,7 @@
     </div>
     <div class="contact" id="contact">
       <div class="contact-info">
+        <h2><span>MAPS</span></h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91597990567!2d-74.1201070919916!3d40.69740302599635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1586515288982!5m2!1sen!2sin" width="1005" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </div>
@@ -295,8 +297,8 @@
         <p>Posted by: Aditya Bhabhe & Saurabh Ambardekar</p>
       </div>   
       <div class="address">   
-        <p> Address: LCO Basketball Ground, 55 - Fictional Homes, Fictional Road,Near Fictional Lake,India </p>
-        <p>Contact US: Mobile: +91999999999</p>
+        <address>Address: LCO Basketball Ground, 55 - Fictional Homes, Fictional Road,Near Fictional Lake,India</address>
+        <p>Contact US: Mobile:<a href="tel:+91999999999">+91999999999</a></p>
       </div>    
     </footer>  
   </div>

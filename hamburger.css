@@ -50,7 +50,7 @@
     background-color:#444;
   }
 
-  @media only screen and (max-width:600px){
+  @media only screen and (max-width:800px){
     .openbtn {
       font-size: 20px;
       cursor: pointer;
@@ -60,7 +60,7 @@
       display: block;
       text-align: left;
       position: relative;
-      left: 69%;
+      left: 79%;
     }
 
       .nav-container{
@@ -72,8 +72,28 @@
     }
 
     .nav-container h1{
-      margin-left: 3%;
+      margin-left: 4%;
       color: white;
+    }
+  }
+
+  @media only screen and (max-width:600px){
+    .openbtn{
+      position: relative;
+      left:76%;
+    }
+  }
+  @media only screen and (max-width:500px){
+    .openbtn{
+      position: relative;
+      left:65%;
+    }
+  }
+
+  @media only screen and (max-width:400px){
+    .openbtn{
+      position: relative;
+      left:64%;
     }
   }
 
